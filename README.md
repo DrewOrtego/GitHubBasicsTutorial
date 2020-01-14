@@ -1,4 +1,4 @@
-# The GitHub Basics Tutuorial
+# The GitHub Basics Tutorial
 
 GitHub is confusing if you're not frequently exposed to it, and the idea of using it to maintain your work can sound daunting once you start hearing words like "branch" and "merge".
 However, it is an amazing tool which protects developers from accidentally deleting or overwriting their own or another's work, tracking all changes to a project, and organizing otherwise unwieldy projects and tasks.

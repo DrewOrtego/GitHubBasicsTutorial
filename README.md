@@ -357,7 +357,7 @@ Use the following resources to learn more about Git and all the things mentioned
 A condensed version of this tutorial, The Simple Guide covers all the commands mentioned here, and is a great reference when you forget exact syntax.
 
 * [GitHub Guides](https://guides.github.com/)
-The official guides to git concepts and syntax, complete with visualizations. The first two or three are probably all you need for the Portal-UI-Harness.
+The official guides to git concepts and syntax, complete with visualizations.
 
 * [Git Documentation](https://git-scm.com/doc)
 low-level explanations of all the commands and concepts Git has to offer.

@@ -1,4 +1,6 @@
-GitHub is confusing if you're not frequently exposed to it, and the idea of using it to maintain your work might sound daunting.
+# The GitHub Basics Tutuorial
+
+GitHub is confusing if you're not frequently exposed to it, and the idea of using it to maintain your work can sound daunting once you start hearing words like "branch" and "merge".
 However, it is an amazing tool which protects developers from accidentally deleting or overwriting their own or another's work, tracking all changes to a project, and organizing otherwise unwieldy projects and tasks.
 
 This guide will teach you the very basics of using GitHub version control while guiding you through the process of committing changes to an actual file using Git from a console (or command prompt if you're using Windows).
@@ -43,7 +45,7 @@ Then we use Git to push those changes into the online repo.
 
 ### Cloning a Project
 
-Login to your GitHub account and navigate to the [GitHubBasicsTutorial](https://GitHub.esri.com/DrewOrtego/GitHubBasicsTutorial) repository.
+Login to your GitHub account and navigate to the top of this web page.
 You'll see a green "Clone or download" button there.
 Click it and select the "Copy to Clipboard" link, located to the right of the url.
 
@@ -63,9 +65,9 @@ You should see some output as well as some new files inside your directory, like
 
 If this worked correctly, you've just "cloned" the remote repository (aka repo) and created a new local repo.
 Cloning means you have a copy of a repo, but on your machine instead of online.
-The local repo itself is nothing more than a directory with a ".git" file inside of it.
-You'll use this local repo to make the changes that you want to see in the remote repo, but you won't add those changes until you're sure that they're ready.
-Before we can do that though, we'll need to navigate the console into the directory which houses our local repo.
+A local repo is nothing more than a directory with a ".git" file inside of it which keeps track of the changes made to the files in that directory (and a few other things).
+You'll use this local repo to make the changes that you want to see in the remote repo.
+Before we can do that though, we'll need to tell the console to navigate into the directory which houses our local repo.
 
 Do that now by running the following into Git CMD:
 
@@ -80,11 +82,12 @@ There are a couple of other things to learn before you can send these changes th
 
 ### Creating a Branch and Making Changes
 
-Git is designed to not only help you track and review changes to a project, it helps change your way of thinking about how you _organize_ those changes.
-You'll get the idea after you complete this tutorial, but the first paradigm to learn is that of "branching".
+Git is designed to help you track and review changes to a project, and it helps you change your way of thinking about how you _organize_ those changes.
+If you can master this tutorial, you'll be a better developer because you will have valuable organizational skills which will save you a lot of time as you balance multiple projects.
+The biggest takeaway is that of compartmentalization.
 
 Git likes to compartmentalize changes by having you work in branches.
-The word "branch" comes from the tree-like structure which is commonly used to visualize repos.
+The word "branch" comes from the tree-like structure which is commonly used to visualize the history of changes in a repo.
 Whenever you plan on making a change to a project, you'll make a branch which is intended to save and track those changes.
 
 Notice the use of "(master)" in the console's prompt.
@@ -107,7 +110,7 @@ You should see a message in Git CMD which says:
 ![Switch Branch](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/branch.PNG)
 
 While working in this new branch, we'll make changes to the GuestBook.txt file.
-(That's why we named it _SignGuestBook_.)
+(That's why we named the branch _SignGuestBook_.)
 Open the GuestBook.txt file in your favorite text editor and write or delete anything you like.
 You can even delete content you find inside of it, and GitHub will show that change in its logs.
 Once you've made changes to GuestBook.txt, navigate to console and type the following:
@@ -121,9 +124,9 @@ You should see this:
 
 ![Git Status](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/status.PNG)
 
-See how "GuestBook.txt" is red, and how Git calls it a "modified file"?
-Git knows that you made changes to this file, but it is waiting for you to "add" those changes to the _SignGuestBook_ branch before they can be committed to the remote repo-- specically to a remote copy of your local branch.
-Git gives you fine-tuning control over which changes you add to a project, and the add-commit-push work flow implements that control.
+See how "GuestBook.txt" is red, and how Git calls it a "modified" file?
+Git knows that you made changes to this file, but it is waiting for you to "add" those changes to the _SignGuestBook_ branch before they can be committed to the remote repo-- specically to a remote copy of the _SignGuestBook_ branch.
+Git gives you lots of fine-tuning control over which changes you add to a project, and the add-commit-push work flow implements that control.
 
 ### Add, Commit, and Push
 

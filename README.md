@@ -25,7 +25,7 @@ However, this tutorial will teach you the concepts which every Git interface use
 
 Open your console or command prompt program and you should see an empty command prompt, waiting for your input.
 
-![Git CMD](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/nav.PNG)
+![Git CMD](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/nav.PNG)
 
 We're going to download some files now, so we'll tell the console to navigate to the location you want to save the downloaded files.
 Choose a directory (or create a new one), then type ```cd "<path to the directory>"``` into your console.
@@ -34,7 +34,7 @@ Press <ENTER> to run the cd command.
 
 You should see that the prompt is now preceeded by the path to the directory you chose.
 
-![cd](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/createdir.PNG)
+![cd](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/createdir.PNG)
 
 Now we need to tell Git to use our new directory to store the content of the online repository.
 We'll do that by making a local copy of the repository (aka "repo") that you see online.
@@ -47,7 +47,7 @@ Login to your GitHub account and navigate to the [GitHubBasicsTutorial](https://
 You'll see a green "Clone or download" button there.
 Click it and select the "Copy to Clipboard" link, located to the right of the url.
 
-![Copy to Clipboard](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/copyclipboard.png)
+![Copy to Clipboard](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/copyclipboard.png)
 
 Now you have the url for the repo saved on your "clipboard", ready to be pasted.
 Navigate to your console and type the following command:
@@ -59,7 +59,7 @@ git clone <paste the URL here>
 Run the command.
 You should see some output as well as some new files inside your directory, like this:
 
-![Clone](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/clone.PNG)
+![Clone](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/clone.PNG)
 
 If this worked correctly, you've just "cloned" the remote repository (aka repo) and created a new local repo.
 Cloning means you have a copy of a repo, but on your machine instead of online.
@@ -73,7 +73,7 @@ Do that now by running the following into Git CMD:
 cd "GitHubBasicsTutorial"
 ```
 
-![Change Directory](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/cd.PNG)
+![Change Directory](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/cd.PNG)
 
 Now you're almost ready to make your changes to the project!
 There are a couple of other things to learn before you can send these changes though.
@@ -104,7 +104,7 @@ git checkout -b "SignGuestBook"
 This will create a new local branch for you called _SignGuestBook_.
 You should see a message in Git CMD which says:
 
-![Switch Branch](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/branch.PNG)
+![Switch Branch](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/branch.PNG)
 
 While working in this new branch, we'll make changes to the GuestBook.txt file.
 (That's why we named it _SignGuestBook_.)
@@ -119,7 +119,7 @@ git status
 This will show you any changes that differ from the repository when you cloned it.
 You should see this:
 
-![Git Status](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/status.PNG)
+![Git Status](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/status.PNG)
 
 See how "GuestBook.txt" is red, and how Git calls it a "modified file"?
 Git knows that you made changes to this file, but it is waiting for you to "add" those changes to the _SignGuestBook_ branch before they can be committed to the remote repo-- specically to a remote copy of your local branch.
@@ -139,7 +139,7 @@ git add *
 The asterisk/star-notation indicates that you want to add all the untracked changes listed in the output from ```git status```.
 If you run ```git status``` now you should see that the _GuestBook.txt_ file is now green instead of red.
 
-![Add](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/add.PNG)
+![Add](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/add.PNG)
 
 This means that it has been added properly and is ready to be committed to a local branch, hence the "changes to be committed" header above it.
 Run the following command to do just that:
@@ -150,7 +150,7 @@ git commit -m "Signed the guest book"
 
 If all went according to plan, you will see this message:
 
-![Git commit](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/commit.PNG)
+![Git commit](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/commit.PNG)
 
 Committing means that the changes are recorded to the repository and can now be pushed to GitHub via a remote branch.
 The exact terminology for this is "staging", and it's basically the preparation step that prepares files before sending those changes to a remote repo.
@@ -169,12 +169,12 @@ git push origin SignGuestBook
 
 The output of this result is a little more verbose, but after a few seconds you should see the following:
 
-![Git push](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/push.PNG)
+![Git push](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/push.PNG)
 
 Open the remote repo in your browser.
 If all went according to plan, you'll see a new message at the top of the repo telling you that you can open a new "Pull Request", like this:
 
-![Open Pull Request](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/openpullreq.PNG)
+![Open Pull Request](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/openpullreq.PNG)
 
 Nice work!
 So far you've created a local branch, added and committed some changes to it, and pushed those changes into the remote repo.
@@ -194,7 +194,7 @@ Both buttons lead to the same page.
 
 You should now be on the "Open a pull request" page, seen here:
 
-![Open a Pull Request](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/openpr1.PNG)
+![Open a Pull Request](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/openpr1.PNG)
 
 You should see the commit message you wrote earlier in the title of the pull request.
 There is also an empty text box here which is perfect for any additional, more detailed notes about your update.
@@ -202,7 +202,7 @@ There is also an empty text box here which is perfect for any additional, more d
 It's always a good idea to document your changes so that you can have a digital "paper trail" of them, specifically why you made the changes, and any "gotya's" or not-immediately-obvious knowledge regarding the changes.
 Let's write a note in there now, something like this:
 
-![Pull Request Notes](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/prnotes.PNG)
+![Pull Request Notes](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/prnotes.PNG)
 
 Notice that I've assigned myself to review the changes and approve them.
 To the right of the notes, there's an "Assignees" label with a cog-icon next to it.
@@ -214,7 +214,7 @@ Click the green "Create pull request" button below the notes section.
 
 A new screen opens with all sorts of new stuff to click on.
 
-![Pull Request Screen](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/currentpullreq.PNG)
+![Pull Request Screen](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/currentpullreq.PNG)
 
 Starting from the top of the page, notice that we're in the "Pull requests" tab.
 You can navigate here to review your Pull Request and see if it has been approved or not.
@@ -249,7 +249,7 @@ If I wanted to, I could enforce rules for the repo via the "Settings" tab which 
 
 Click the green "Merge pull request" button, which will open a confirmation window asking you for any last minute notes, then click "Confirm merge" (also green) to see the changes complete.
 
-![merge](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/merge.PNG)
+![merge](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/merge.PNG)
 
 The merge window will be replaced with a "Pull request successfully merged and closed" message and a "Delete branch" button.
 This button refers to the remote branch, not the local one.
@@ -259,7 +259,7 @@ This shows you other contributor's branches too.
  
 Click on "Delete branch".
 
-![delete](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/deleteui.PNG)
+![delete](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/deleteui.PNG)
 
 The remote branch that you just deleted existed on GitHub, not your local machine, hence the term "remote".
 The changes you made locally are still on your machine, completely independent of the work you've done with the remote branch.
@@ -277,7 +277,7 @@ git branch
 
 Notice the output:
 
-![branch](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/branch2.PNG)
+![branch](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/branch2.PNG)
 
 _SignGuestBook_ is still there, but it's the _local_ branch, not the remote copy of it.
 We deleted that _remote_ branch a few seconds ago, and now we need to delete the _local_ one too.
@@ -304,7 +304,7 @@ Enter the following into the console:
 git checkout master
 ```
 
-![checkout](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/checkoutmaster.PNG)
+![checkout](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/checkoutmaster.PNG)
 
 This will switch your active local branch to _master_.
 You can enter ```git branch``` again if you want to verify that the switch was successful, and now _master_ will have an * next to its name.
@@ -315,7 +315,7 @@ Run the following Git command:
 git pull
 ```
 
-![pull](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/gitpull.PNG)
+![pull](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/gitpull.PNG)
 
 This "pulls" all the changes from the master _remote_ branch on GitHub onto your local master branch, very similar to the way in which we cloned the master branch at the beginning of the tutorial.
 Now that the changes from _SignGuestBook_ have been merged into _master_, you should see those changes reflected on your local machine.
@@ -331,7 +331,7 @@ Run this final command to delete your local branch:
 git branch -D SignGuestBook
 ```
 
-![deletebranch](https://github.com/DrewOrtego/GitHubBasicsTutorial/Doc/Images/deletebranch.PNG)
+![deletebranch](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/deletebranch.PNG)
 
 The -D flag stands for "Delete", and with that we have completed our first collaboration on GitHub!
 Run the ```git branch``` command to verify that you have deleted the SignGuestBook branch.

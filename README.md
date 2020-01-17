@@ -28,7 +28,7 @@ The work flow needed to do this is as follows:
 6. Open the pull request in the remote repo
 7. Await the pull request to be approved and merged
 8. Delete our branch and merge the changes into the local master branch
-
+9. Delete the fork
 
 ### Requirements
 
@@ -272,7 +272,7 @@ We've come full circle now: branches are used to make changes (via pull requests
 Your next step is to wait for the _DrewOrtego_ to approve your Pull Request, at which time you can merge your changes into the repo.
 Go get some coffee, we're almost done!
 
-### Merging Changes and Deleting Branches
+### Merging Changes
 We're going to complete the "merge" work flow now, and then clean up our branch which we used to make changes to the project.
 This knowledge will be especially useful when you are working on a long-term project and need to use different branches to organize your work.
 The goal is to use a branch to make a change, merge that change, then delete the branch, and repeat for subsequent changes.
@@ -360,6 +360,8 @@ This "pulls" all the changes from the master _remote_ branch on GitHub onto your
 Now that the changes from _SignGuestBook_ have been merged into _master_, you should see those changes reflected on your local machine.
 Open up the GuestBook.txt file and you should see your entry!
 
+### Cleaning up Branches and Forks
+
 It is now time to delete the local _SignGuestBook_ branch.
 
 >  The pull and delete-branch work flow can be done in any order, it's just an extra sanity check to your work flow if you pull first and verify that you are absolutely sure it's OK to delete your local branch. 
@@ -380,8 +382,22 @@ As mentioned before, deleting branches is important because it helps keep your w
 If you're working with multiple branches, they should each have a solitary purpose, and branches show everyone the way we implemented that singular purpose.
 Creating and deleting branches is a daily occurrence when you're involved with a project, and the better you are at it, the easier your job-- and everyone else's-- will be.
 
-It takes practice (sometimes a lot) to become comfortable with Git because it's a new way of thinking about how to organize your work.
-However, you will get comfortable with it after using it for a while, and you should see it improve your efficiency in no time.
+In addition, you can delete the forked remote repo.
+If you ever want to contribute to the project again, you'll have to fork it again, so it's up to you.
+
+To delete the remote repo, head to the remote repo's url and click the "Settings" button in the upper right.
+This will bring you to the "Options" tab of the settings menu.
+Scroll down until you see the "Danger Zone" area (it's highlighted in red) and find the "Delete this repository" button.
+Click it, follow the instructions, and you'll have deleted your forked, remote copy of the GitHubBasicsTutorial repo.
+
+### All Done!
+
+Nice work!
+Now you have the skills to contribute to any project on GitHub, and you can do so by using the console, which is no small feat.
+Once you get used to it, this work flow is very handy, and will help you organize your code as well as your approach to coding.
+
+It takes practice (sometimes a lot!) to become comfortable with Git because it's a new way of thinking about how to organize your work.
+However, you will get comfortable with it, and you will see it improve your efficiency in no time.
 
 Now go forth and merge more pull requests!
 

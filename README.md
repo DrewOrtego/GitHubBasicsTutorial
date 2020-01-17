@@ -73,7 +73,7 @@ When the forked repo is ready, you'll be brought to your new copy of the GitHubB
 You've successfully made a copy of the GitHubBasicsTutorial repo from the DrewOrtego account.
 You'll make all your updates to this forked repo, and then use the forked repo to propose changes to the repo in the DrewOrtego account.
 
-> You have to form the repository because you aren't listed as a "collaborator" in the repo. If you're working on a repo where you are listed as a collaborator, you can skip the fork work flow. 
+> You have to fork the repository because you aren't listed as a "collaborator" in the repo. If you're working on a repo where your username is listed as a collaborator, you can skip the fork work flow and go straight to the clone work flow.
 
 ### Cloning a Project
 

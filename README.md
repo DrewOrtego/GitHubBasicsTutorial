@@ -65,7 +65,7 @@ Then we use Git to push the changes from our local repo into the remote repo.
 Head to GitHub.com and login to your account.
 If you're reading this on https://github.com/DrewOrtego/GitHubBasicsTutorial, then scroll to the top of the page until you see the "Fork" button in the upper right corner.
 
-![Fork](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/fork.png)
+![Fork](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/Fork.png)
 
 Click the "Fork" button and you'll see a message that says "Forking GitHubBasicsTutorial... this should only take a few seconds."
 

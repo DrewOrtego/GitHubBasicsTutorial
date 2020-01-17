@@ -14,6 +14,22 @@ By the time you're ready to join the pot-luck, you'll have a perfect dish, and n
 
 Let's put this idea into action and get started with setting up Git on your computer.
 
+### What We'll Be Doing
+We're going to sign the GuestBook.txt file in this repository (aka repo).
+By doing so, we'll be demonstrating how to update a file on someone else's repo.
+This is basis of GitHub collaboration.
+
+The work flow needed to do this is as follows:
+1. Fork this repo
+2. Clone the forked repo
+3. Create a new branch in the local repo
+4. Edit the GuestBook.txt file
+5. Add, commit, and push the edits to the remote forked-repo
+6. Open the pull request in the remote repo
+7. Await the pull request to be approved and merged
+8. Delete our branch and merge the changes into the local master branch
+
+
 ### Requirements
 
 You'll need a few things to get started:
@@ -38,20 +54,40 @@ You should see that the prompt is now preceeded by the path to the directory you
 
 ![cd](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/createdir.PNG)
 
-Now we need to tell Git to use our new directory to store the content of the online repository.
-We'll do that by making a local copy of the repository (aka "repo") that you see online.
-When we want to add changes to an online (or "remote") repo, we first make the changes on our own computer in a "local repo".
-Then we use Git to push those changes into the online repo.
+Now we need to tell Git to use our new directory to store the content of the online (aka remote) repository.
+This will result in making a local repository (aka repo) which is simply a copy of what you see online.
+
+> When we want to add changes to an online (or "remote") repo, we first make the changes on our own computer in a "local repo".
+Then we use Git to push the changes from our local repo into the remote repo.
+
+### Forking a Project
+
+Head to GitHub.com and login to your account.
+If you're reading this on https://github.com/DrewOrtego/GitHubBasicsTutorial, then scroll to the top of the page until you see the "Fork" button in the upper right corner.
+
+![Fork](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/fork.png)
+
+Click the "Fork" button and you'll see a message that says "Forking GitHubBasicsTutorial... this should only take a few seconds."
+
+When the forked repo is ready, you'll be brought to your new copy of the GitHubBasicsTutorial repo, but notice that you are in your own account!
+You've successfully made a copy of the GitHubBasicsTutorial repo from the DrewOrtego account.
+You'll make all your updates to this forked repo, and then use the forked repo to propose changes to the repo in the DrewOrtego account.
+
+> You have to form the repository because you aren't listed as a "collaborator" in the repo. If you're working on a repo where you are listed as a collaborator, you can skip the fork work flow. 
 
 ### Cloning a Project
 
-Login to your GitHub account and navigate to the top of this web page.
-You'll see a green "Clone or download" button there.
-Click it and select the "Copy to Clipboard" link, located to the right of the url.
+In your newly forked repo, you you should see a green "Clone or download" button.
+Click it to bring up a pop-up box which says "Clone with HTTPS".
+
+> If it says "Clone with SSH" instead, click the "Use HTTPS" link in the upper right corner.
+That should toggle the pop-up back to the "Clone with HTTPS" option.
+
+Click the "Copy to Clipboard" link, located to the right of the url.
 
 ![Copy to Clipboard](https://github.com/DrewOrtego/GitHubBasicsTutorial/blob/master/Images/copyclipboard.png)
 
-Now you have the url for the repo saved on your "clipboard", ready to be pasted.
+Now you have the url for your repo saved on your "clipboard", ready to be pasted.
 Navigate to your console and type the following command:
 
 ```
@@ -361,3 +397,6 @@ The official guides to git concepts and syntax, complete with visualizations.
 
 * [Git Documentation](https://git-scm.com/doc)
 low-level explanations of all the commands and concepts Git has to offer.
+
+* [Pro Git](https://git-scm.com/book/en/v2)
+The "bible" of Git and GitHub, this book will answer every question you have about GitHub.

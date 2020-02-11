@@ -76,7 +76,7 @@ git status
 
 #### * Get the latest state of a remote repo's branch
 ```
-git master
+git pull
 ```
 
 #### * Switch to another local branch
